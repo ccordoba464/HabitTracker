@@ -1,5 +1,11 @@
-.header {
+.navbar {
   display: flex;
   background-color: rgb(31, 31, 31);
   height: 5vh;
+}
+
+.content {
+  display: flex;
+  background-color: rgb(51, 51, 51);
+  height: 25vh;
 }

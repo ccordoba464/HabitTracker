@@ -1,0 +1,60 @@
+.home {
+  height: 80vh;
+  background-color: rgb(77, 77, 77);
+  display: flex;
+  flex-direction: column;
+}
+
+.tasksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.taskList {
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 8px;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.quickAdd {
+  padding: 12px 16px;
+  resize: none;
+  border-radius: 4px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+
+.quickAdd:focus {
+  border: none;
+  overflow: auto;
+  outline: none;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  padding: 12px 16px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.taskTitle {
+  font-weight: bold;
+}
+
+.checkbox {
+  width: 20px;
+  accent-color: gold;
+}
+
+.checkbox:checked {
+  background-color: gold;
+}
