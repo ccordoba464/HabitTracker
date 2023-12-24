@@ -1,8 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap");
+
+:root {
+  --accent-green: #4af626;
+}
+
 .home {
   height: 80vh;
   background-color: rgb(77, 77, 77);
   display: flex;
   flex-direction: column;
+  padding: 20px;
+}
+
+.controlPanel {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  font-size: 2rem;
+  padding: 10px;
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+  font-family: "VT323", monospace;
+  gap: 10px;
+}
+
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--accent-green);
+  font-size: 16px;
+  padding: 6px;
+}
+
+.statCard {
+  display: flex;
+  padding: 4px 6px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--accent-green);
+}
+
+.statValue {
+  font-size: 1.5rem;
+}
+
+.panelContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--accent-green);
+  padding: 8px;
+}
+
+.panelTitle {
+  font-size: 1.4rem;
 }
 
 .tasksContainer {
@@ -22,18 +72,27 @@
   gap: 8px;
 }
 
+.listName {
+  color: gray;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
 .quickAdd {
-  padding: 12px 16px;
+  padding: 10px 16px;
   resize: none;
-  border-radius: 4px;
+  border-radius: 2px;
   background-color: rgb(48, 48, 48);
-  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--accent-green);
 }
 
 .quickAdd:focus {
   border: none;
   overflow: auto;
   outline: none;
+  border: 1px solid var(--accent-green);
 }
 
 .taskItem {
@@ -41,7 +100,7 @@
   justify-content: space-between;
   background-color: rgb(48, 48, 48);
   color: white;
-  padding: 12px 16px;
+  padding: 16px 16px;
   font-size: 12px;
   border-radius: 4px;
 }
@@ -52,9 +111,5 @@
 
 .checkbox {
   width: 20px;
-  accent-color: gold;
-}
-
-.checkbox:checked {
-  background-color: gold;
+  accent-color: var(--accent-green);
 }

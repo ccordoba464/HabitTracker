@@ -1,11 +1,44 @@
-.navbar {
+.header {
   display: flex;
   background-color: rgb(31, 31, 31);
-  height: 5vh;
+  height: 6vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.title {
+  align-self: center;
+  padding: 10px 14px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.tab {
+  display: flex;
+  padding: 10px 14px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.tab:hover {
+  background-color: rgb(20, 20, 20);
 }
 
 .content {
   display: flex;
   background-color: rgb(51, 51, 51);
-  height: 25vh;
+  height: 32vh;
+  overflow: hidden; /* Hide the overflow to maintain the div boundaries */
+  position: relative; /* Use relative for positioning context */
+}
+
+.gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the div with the image without distortion */
+
+  image-rendering: pixelated; /* This can make images less blurry but more pixelated */
 }
