@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap");
+
 .header {
   display: flex;
   background-color: rgb(31, 31, 31);
-  height: 6vh;
+  height: 50px;
   display: flex;
   color: white;
   justify-content: space-between;
@@ -30,15 +32,25 @@
 .content {
   display: flex;
   background-color: rgb(51, 51, 51);
-  height: 32vh;
+  height: 30vh;
   overflow: hidden; /* Hide the overflow to maintain the div boundaries */
-  position: relative; /* Use relative for positioning context */
 }
 
 .gif {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Cover the div with the image without distortion */
-
   image-rendering: pixelated; /* This can make images less blurry but more pixelated */
+}
+
+.contentDesc {
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: "VT323", monospace;
+  font-size: 1.3rem;
+  padding: 12px;
+  gap: 20px;
 }

@@ -23,6 +23,17 @@ export default function Header() {
       <div className={styles.content}>
         <img src={eye} alt="" className={styles.gif} />
       </div>
+      <div className={styles.contentDesc}>
+        <div className={styles.engraving}>Subject ID: 777</div>/
+        <div className={styles.engraving}>
+          <span className="text-red-500">RESTRICTED AREA</span>
+        </div>
+        /
+        <div className={styles.engraving}>
+          <span className="text-red-500">WARNING:</span> AVOID CONTACT WITH
+          SUBJECT
+        </div>
+      </div>
     </>
   );
 }

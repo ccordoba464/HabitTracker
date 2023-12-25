@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import ProgressBar from "../ProgressBar/ProgressBar.jsx";
+import TaskList from "../TaskList/TaskList.jsx";
 
 export default function Home() {
   return (
@@ -34,94 +35,9 @@ export default function Home() {
       </div>
 
       <div className={styles.tasksContainer}>
-        <div className={styles.taskList}>
-          <div className={styles.listName}>Habits</div>
-          <textarea
-            rows="1"
-            className={styles.quickAdd}
-            placeholder="Add a Habit"
-          ></textarea>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-        </div>
-        <div className={styles.taskList}>
-          <div className={styles.listName}>To Do's</div>
-          <textarea
-            rows="1"
-            className={styles.quickAdd}
-            placeholder="Add a To Do"
-          ></textarea>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-        </div>
-        <div className={styles.taskList}>
-          <div className={styles.listName}>Dailies</div>
-          <textarea
-            rows="1"
-            className={styles.quickAdd}
-            placeholder="Add a Daily"
-          ></textarea>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-        </div>
-        <div className={styles.taskList}>
-          <div className={styles.listName}>Rewards</div>
-          <textarea
-            rows="1"
-            className={styles.quickAdd}
-            placeholder="Add a Reward"
-          ></textarea>
-          <div className={styles.taskItem}>
-            <div className={styles.text}>
-              <div className={styles.taskTitle}>Task</div>
-              <div className={styles.taskDesc}>Do thing</div>
-            </div>
-            <input type="checkbox" className={styles.checkbox} />
-          </div>
-        </div>
+        <TaskList title="Habits" task="Habit" />
+        <TaskList title="To Do's" task="To Do" />
+        <TaskList title="Dailies" task="Daily" />
       </div>
     </div>
   );
